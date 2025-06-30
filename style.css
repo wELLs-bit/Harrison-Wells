@@ -637,8 +637,90 @@ h3.my-profession {
   max-width: 100%;
   margin-bottom: 40px;
 }
-
 .portfolio .portfolio-heading h2{
+  color: var(--text-black-900);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-card {
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.team-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--skin-color), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  border-radius: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.relative {
+  position: relative;
+  gap: 1rem;
+}
+
+.team-card:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-overlay p {
+  color: white;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Arial,  sans-serif;
+}
+
+.card-body a {
+  color: var(--skin-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .team-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .team-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* .portfolio .portfolio-heading h2{
   color: var(--text-black-900);
   font-weight: bold;
 }
@@ -659,7 +741,7 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-img img{
   width: 100%;
   display: block;
-}
+} */
 
 
 .contact-title{
