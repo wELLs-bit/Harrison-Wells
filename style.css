@@ -628,9 +628,8 @@ h3.my-profession {
   line-height: 25px;
 }
 
-
 .portfolio .container{
-  padding: 14px;
+  padding: 0px;
   padding-bottom: 40px;
 }
 .portfolio .portfolio-heading{
